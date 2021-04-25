@@ -1,82 +1,93 @@
-import Head from 'next/head'
+import SEO from "../components/SEO"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen">
+            <SEO />
+            <Header />
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+            <main className="flex flex-col items-center justify-center text-center">
+                <section id="dienstleistungen" className="pt-32">
+                    <div className="text-base leading-6 uppercase font-semibold text-blue-400">
+                        Sicher zum Ziel
+                    </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
+                    <h1 className="pt-2 text-4xl leading-10 font-extrabold">
+                        Unsere Dienstleistungen
+                    </h1>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+                    <p className="pt-2 text-xl leading-7 font-normal text-gray-500">
+                        Vertrauen Sie unserer Erfahrung
+                    </p>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+                    <ul className="grid grid-cols-1 md:grid-cols-3">
+                        <li className="pt-8 flex flex-col items-center">
+                            <img className="w-18" src="/lorry.svg" alt="lkw" />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+                            <h2 className="pt-5 text-lg leading-7 font-medium text-blue-800">
+                                Transportbegleitung | Begleitfahrzeug
+                            </h2>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+                            <div className="pt-5 text-base leading-6 font-normal text-gray-500">
+                                Wir übernehmen die Planung, Absicherung und
+                                Begleitung Ihres Transportes mit unserem BF3
+                                Begleitfahrzeug
+                            </div>
+                        </li>
+
+                        <li className="pt-8 flex flex-col items-center">
+                            <img className="w-18" src="/map.svg" alt="map" />
+                            <h2 className="pt-5 text-lg leading-7 font-medium text-blue-800">
+                                Prüfung & Erkundung
+                            </h2>
+                            <div className="pt-5 text-base leading-6 font-normal text-gray-500">
+                                Überprüfung der Strecke, um kritische Stellen
+                                abzusichern und zu dokumentieren
+                            </div>
+                        </li>
+
+                        <li className="pt-8 flex flex-col items-center">
+                            <img
+                                className="w-18"
+                                src="/absperrung.svg"
+                                alt="absperrung"
+                            />
+                            <h2 className="pt-5 text-lg leading-7 font-medium text-blue-800">
+                                Verkehrssicherung
+                            </h2>
+                            <div className="pt-5 text-base leading-6 font-normal text-gray-500">
+                                Wir richten Sperrungen, Halteverbotszonen oder
+                                weitere Verkehrssicherungen ein
+                            </div>
+                        </li>
+                        <li></li>
+
+                        <li className="pt-8">
+                            <a
+                                className="block flex flex-col items-center"
+                                href="tel:+491772608240"
+                            >
+                                <img
+                                    className="w-18"
+                                    src="/phone.svg"
+                                    alt="telefon"
+                                />
+                                <h2 className="pt-5 text-lg leading-7 font-medium text-blue-800">
+                                    24-Stunden-Service
+                                </h2>
+                                <div className="pt-5 text-base leading-6 font-normal text-gray-500">
+                                    +49 (177) 26 08 24 0
+                                </div>
+                            </a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </section>
+            </main>
+
+            <Footer />
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
