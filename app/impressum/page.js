@@ -57,15 +57,9 @@ const impressum = () => {
             </ul>
 
             <div className="pt-8 w-1/2 mx-auto">
-              Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO: Die
-              Europäische Kommission stellt eine Plattform zur
-              Online-Streitbeilegung (OS) bereit, die Sie unter{" "}
-              <a href="https://ec.europa.eu/consumers/odr/">
-                https://ec.europa.eu/consumers/odr/
-              </a>{" "}
-              finden. Darüber hinaus nimmt unser Betrieb an einem
-              Verbraucherstreitigkeitsverfahren nicht teil.
-              <br /> Bitte beachten Sie auch unsere{" "}
+              Unser Betrieb nimmt an einem Verbraucherstreitigkeitsverfahren
+              nicht teil, und ist hierzu auch nicht verpflichtet. <br /> Bitte
+              beachten Sie auch unsere{" "}
               <Link href="datenschutz" className="cursor-pointer">
                 Datenschutzerklärung
               </Link>
